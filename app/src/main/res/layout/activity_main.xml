@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.nevaryyy.beautyfilterdemo.main.MainActivity">
+
+    <android.opengl.GLSurfaceView
+        android:id="@+id/glsv_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageButton
+        android:id="@+id/ib_main_magic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|start"
+        android:layout_marginStart="@dimen/margin_normal"
+        android:layout_marginBottom="@dimen/margin_normal"
+        android:background="@null"
+        android:src="@mipmap/magic"/>
+
+    <ImageButton
+        android:id="@+id/ib_main_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_marginBottom="@dimen/margin_normal"
+        android:layout_marginEnd="@dimen/margin_normal"
+        android:background="@null"
+        android:src="@mipmap/switch_camera"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="200dp"
+        android:text="stepoffset:2.0 ; tone:-0.5 ; beauty:1.2 ; bright:0.47 ;"
+        android:padding="10dp" />
+
+    <SeekBar
+        android:id="@+id/sb_tone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="120dp"
+        android:indeterminate="false"
+
+        android:padding="10dp" />
+    <SeekBar
+        android:id="@+id/sb_beauty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="80dp"
+        android:indeterminate="false"
+
+        android:padding="10dp" />
+    <SeekBar
+        android:id="@+id/sb_bright"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="40dp"
+        android:indeterminate="false"
+
+        android:padding="10dp" />
+
+    <SeekBar
+        android:id="@+id/sb_stepoffset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="160dp"
+        android:indeterminate="false"
+
+        android:padding="10dp" />
+
+    <Button
+        android:id="@+id/picBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="图片处理"
+        />
+
+</FrameLayout>
