@@ -1,6 +1,7 @@
 package com.nevaryyy.beautyfilterdemo.main;
 
 import android.content.Intent;
+import android.graphics.BitmapFactory;
 import android.graphics.PixelFormat;
 import android.hardware.Camera;
 import android.opengl.GLSurfaceView;
@@ -198,7 +199,6 @@ public class MainActivity extends BaseActivity {
 
             }
         });
-
         init();
     }
 
@@ -246,6 +246,12 @@ public class MainActivity extends BaseActivity {
 
         noMagicFilterGroup = new GPUImageFilterGroup();
         noMagicFilterGroup.addFilter(new GPUImageFilter());
+
+        //start
+        GPUImagePicFilter PicFilter = new GPUImagePicFilter();
+        PicFilter.setBitmap(BitmapFactory.decodeResource(getResources(), R.drawable.filter_weimei));
+        magicFilterGroup.addFilter(PicFilter);
+        //end
 
         gpuImage.setFilter(magicFilterGroup);
     }

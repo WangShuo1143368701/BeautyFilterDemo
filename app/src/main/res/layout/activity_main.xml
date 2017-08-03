@@ -70,6 +70,7 @@
         android:padding="10dp" />
 
     <SeekBar
+        style="@android:style/Widget.Holo.SeekBar"
         android:id="@+id/sb_stepoffset"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
