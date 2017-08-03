@@ -239,7 +239,7 @@ public class MainActivity extends BaseActivity {
         currentCameraId = 0;
 
         gpuImage = new GPUImage(this);
-        gpuImage.setGLSurfaceView(glSurfaceView);
+         gpuImage.setGLSurfaceView(glSurfaceView);
 
         magicFilterGroup = new GPUImageFilterGroup();
         magicFilterGroup.addFilter(mGPUImageBeautyFilter);
